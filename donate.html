@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Us - Furaha Crest Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: #ffffff;
+            color: #ad1c1a;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://via.placeholder.com/1920x600/4CAF50/FFFFFF?text=School+Background') no-repeat center center;
+            background-size: cover;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: bounceIn 1s ease-out;
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .intro {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        .ways-to-support {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 20px;
+        }
+        .support-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        .support-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .support-item i {
+            font-size: 3em;
+            color: #ad1c1a;
+            margin-bottom: 10px;
+        }
+        .cta {
+            background: #ffffff;
+            color: #ad1c1a;
+            padding: 20px;
+            text-align: center;
+            margin: 40px 20px;
+            border-radius: 10px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .cta button {
+            background: white;
+            color: #ad1c1a;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .cta button:hover {
+            background: #f0f0f0;
+        }
+        .testimonials {
+            padding: 40px 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .testimonial {
+            max-width: 600px;
+            margin: 20px auto;
+            font-style: italic;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        footer {
+            background: #ad1c1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Parallax effect for background */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<header>
+  <div class="top-header">
+    <div class="container">
+      <div class="logo">Furaha Crest Academy</div>
+      <div class="top-nav">
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="main-nav">
+    <div class="container">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        
+        <li><a href="donate.html">Support Us</a></li>
+        <li><a href="student-life.html">Student Life</a></li>
+        <li><a href="quicklinks.html">Quicklinks</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<body>
+    
+    <header class="top header">
+        
+        <h1>Support Us</h1>
+        <p>Help us build a brighter future for our kids!</p>
+    </header>
+
+    <section class="intro">
+        <h2>Why Your Support Matters</h2>
+        <p>At Furaha Crest Academy, we believe every child deserves a nurturing environment to learn, grow, and thrive. Your contributions help fund new classrooms, educational resources, and fun activities that inspire our young learners. Join our community in making a difference!</p>
+    </section>
+
+    <section class="ways-to-support">
+        <div class="support-item">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Donate</h3>
+            <p>Make a one-time or recurring donation to support our programs. Every dollar counts!</p>
+        </div>
+        <div class="support-item">
+            <i class="fas fa-users"></i>
+            <h3>Volunteer</h3>
+            <p>Share your time and skills. Help with events, tutoring or school projects.</p>
+        </div>
+        <div class="support-item">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>Purchase School Merchandise</h3>
+            <p>Purchase school merchandise or participate in our fundraising campaigns.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Help?</h2>
+        <p>Click below to get started today!</p>
+        <button onclick="alert('Thank you for your interest! Redirecting to donation page...')">Donate Now</button>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Supporters Say</h2>
+        <div class="testimonial">
+            <p>"Supporting Furaha Crest Academy has been rewarding. Seeing the kids' smiles makes it all worthwhile!" - Parent Volunteer</p>
+        </div>
+        <div class="testimonial">
+            <p>"My donation helped fund new teaching supplies. The creativity in our school has soared!" - Local Donor</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Furaha Crest Academy. All rights reserved. | Contact us at furahaskul@gmail.com</p>
+    </footer>
+
+    <script>
+        // GSAP animations for scroll-triggered effects
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate intro section on scroll
+        gsap.to('.intro', {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: '.intro',
+                start: 'top 80%',
+            }
+        });
+
+        // Animate support items on scroll
+        gsap.utils.toArray('.support-item').forEach((item, index) => {
+            gsap.to(item, {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                delay: index * 0.2,
+                scrollTrigger: {
+                    trigger: item,
+                    start: 'top 80%',
+                }
+            });
+        });
+
+        // Animate testimonials on scroll
+        gsap.utils.toArray('.testimonial').forEach((testimonial, index) => {
+            gsap.to(testimonial, {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                delay: index * 0.2,
+                scrollTrigger: {
+                    trigger: testimonial,
+                    start: 'top 80%',
+                }
+            });
+        });
+    </script>
+</body>
+</html>
