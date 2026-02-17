@@ -919,4 +919,9 @@ footer {
 .gallery-item:hover .overlay {
     background: rgba(128, 0, 0, 0.6); /* Changes to school maroon on hover */
 }
+img {
+  max-width: 100%; /* Image scales down if needed, but not up past original size */
+  height: auto;    /* Maintains the image's aspect ratio */
+}
+
 
