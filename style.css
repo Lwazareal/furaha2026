@@ -924,4 +924,16 @@ img {
   height: auto;    /* Maintains the image's aspect ratio */
 }
 
+.container {
+    width: 80%; /* Uses 80% of its parent's width */
+    margin: auto;
+}
+.responsive-img {
+    max-width: 100%; /* Image scales down but not up past its natural size */
+    height: auto; /* Maintains aspect ratio */
+}
+body {
+    font-size: 1rem; /* Relative to the root html element's font-size */
+}
+
 
